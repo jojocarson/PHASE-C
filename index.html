@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHASE-C</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white; /* Change text color to white for better readability */
+            font-family: 'Roboto', sans-serif; 
+            padding: 60px; /* add padding to body*/
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for heading */
+            font-size: 7em; /* Make the heading larger */
+            font-weight: 500; /* Use bold weight */
+            text-align: center; /* Center the heading */
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for heading */
+            font-size: 2em; /* Customize the font size */
+            font-weight: 300; /* Use bold weight */
+            text-align: center; 
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for heading */
+            font-size: 1.5em; /* Customize the font size */
+            font-weight: 500; /* Use bold weight */
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for paragraph */
+        }
+
+        .figure-container {
+            display: flex;
+            align-items: right;
+            gap: 10px; /* Add some space between the figure and the text */
+            margin-bottom: 20px; /* Add some space between the rows */
+            overflow: hidden; /* Hide any content that overflows the container */
+        }
+
+        .figure-container .text {
+            flex: 1; /* Allow text to take up remaining space */
+        }
+
+        .figure-container iframe {
+            border: none; /* Remove border around iframes */
+            width: 950px; /* Set width of each iframe */
+            height: 700px; 
+            overflow: hidden; 
+        }
+
+
+        /* Center the figures in the left column */
+        .figure-container:first-child {
+            justify-content: center; /* Center horizontally */
+            text-align: center; /* Center text */
+            flex-direction: column; /* Arrange items in a column */
+            align-items: center; /* Center vertically */
+        }
+
+        .text {
+            flex: 1; /* Allow text to take up remaining space */
+            text-align: left; /* Align text to the right */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Vertically center the text */
+        }
+
+    /* Additional custom styles can be added here */
+     </style>
+
+</head>
+<body>
+   <h1>Monitoring hepatitis C <br> treatment in Australia</h1> 
+    <h2>Trends in hepatitis C virus (HCV) treatment and retreatment during 2016-2023</h2>
+
+    <!-- First row with figure and text -->
+    <div class="figure-container">
+        <iframe src="PBS_HCV_TXRT_line.html"></iframe>
+        <div class="text">
+            <h3>Treatment and retreatment trends</h3>
+            <p> Australia has made world-leading strides towards HCV elimination. By 2024, 105,947 people had initiated direct-acting antiviral (DAA) 
+                treatments in Australia - half of the estimated population with HCV relative to 2015. Both the prescribers treating HCV and population 
+                being treated have changed over time. Treatment initiation decreased over time while retreatment initiation has increased. By the end 
+                of 2023, 10% (n=10567) of the treated population had been retreated at least once (range 1-8 times).</p>
+        </div>
+    </div>
+
+    <div class="figure-container">
+        <iframe id=polar_rt_num src="HCV_RT_polar.html"></iframe>
+        <div class="text">
+            <h3>Treatment and retreatment over the past 5 years</h3>
+            <p> One third of all HCV treatment (35%) was prescribed during 2019 to 2023. The vast majority of retreatments (85%) were prescribed during this period.
+                During 2019-2023, the number of treatment initations has decreased and retreatment comprises an increasing proportion of all treatment delivered.
+                By end of 2023, 35% of all DAA prescriptions were for retreatment. </p>
+        </div>
+    </div>
+
+    <!-- Second row with figure and text -->
+    <div class="figure-container">
+        <iframe id=hcv_ri_tf src="PBS_HCV_RT_line.html"></iframe>
+        <div class="text">
+            <h3>Retreatment for reinfection and treatment failure</h3>
+            <p> An increasing trend in retreatment for reinfection was observed, with distinct acceleration in 2022-2023 (following COVID-19 restrictions). 
+                Retreatment for treatment failure did not mimic the decreasing treatment initiation trend. Retreatment for treatment failure peaked in 2019, when a new salvage DAA 
+                (for resistant virus) became available, then stabilised from 2021. </p>
+        </div>
+    </div>
+
+
+    <div class="figure-container">
+        <iframe id=polar_rt_num src="HCV_TXRT_polar.html"></iframe>
+        <div class="text">
+            <h3>Retreatment over the past 5 years</h3>
+
+            <p> Reason for retreatment changed over the past 5 years.  
+                While in 2019, more than half of retreatment was for treatment failure (58%); by 2023, the majority of retreatment was for reinfection (75%).</p>
+    
+        </div>
+    </div>
+
+    <div class="figure-container">
+        <iframe src="PBS_HCV_TX_pres.html"></iframe>
+        <div class="text">
+            <h3>Treatment prescriber trends</h3>
+            <p> HCV specialsts prescribed the majority of treatment (51%) in Australia. 
+                However, prescribing by primary care clinicians including general practitioners and nurse practitoners increased over time.
+                From 2018 onwards, GPs were the majority prescribers of HCV treatment.
+                 </p>
+        </div>
+    </div>
+
+    <div class="figure-container">
+        <iframe src="HCV_polar_pres.html"></iframe>
+        <div class="text">
+            <h3>Prescribers over the past 5 years </h3>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="figure-container">
+        <iframe id="retreatment-ri-prison" src="PBS_HCV_RI_pres.html"></iframe>
+        <div class="text">
+            <h3>Prescribers retreating reinfection </h3>
+            <p> ...... </p>
+        </div>
+    </div>
+
+    <div class="figure-container">
+        <iframe id="retreatment-ri-prison" src="PBS_HCV_RI_prison.html"></iframe>
+        <div class="text">
+            <h3>Retreatment for reinfection in prisons </h3>
+            <p> HCV treatment in prisons increased over time. By the end of 2023 40% of all treatment delivery occurred in custodial settings.
+                The increase in prison treatments correlated with an increase in retreatment for reinfection in prisons. 
+                An estimated two-thirds (63%) retreatment for reinefction occured in prison. </p>
+        </div>
+    </div>
+
+
+    
+    <div class="figure-container">
+        <iframe id="retreatment-ri-prison" src="PBS_HCV_TF_pres.html"></iframe>
+        <div class="text">
+            <h3>Prescribers retreating treatment failure </h3>
+            <p> ...... </p>
+        </div>
+    </div>
+
+   <div class="figure-container">
+    <iframe id="retreatment-disc" src="PBS_HCV_TF_disc.html"></iframe>
+    <div class="text">
+        <h3>Treatment discontinuation and retreatment</h3>
+        <p> ....s.</p>
+    </div>
+</div>
+
+</body>
+</html>
